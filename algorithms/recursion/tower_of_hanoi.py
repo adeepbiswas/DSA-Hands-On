@@ -22,8 +22,13 @@ hanoi(n, src, dst, tmp):
         move(disk n, src, dst)
         hanoi(n-1, tmp, dst, src)
         
-Time Complexity- O(2^n) [Refer - https://www.geeksforgeeks.org/time-complexity-analysis-tower-hanoi-recursion/?ref=next_article]
+Time Complexity- O(2^n) 
 Space Complexity- O(1)
+
+Referrence -
+
+1. https://www.youtube.com/watch?v=YstLjLCGmgg
+2. https://www.geeksforgeeks.org/time-complexity-analysis-tower-hanoi-recursion/?ref=next_article
 
 """
 
