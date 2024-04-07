@@ -67,4 +67,4 @@ def find_pivot(arr):
 arr = [9, 13, 16, 18, 19, 23, 28, 31, 37, 42, 1, 3, 4, 5, 7, 8]
 k = find_pivot(arr)
 
-print("The unknown integer k is:", k)
+print("Rotation count k is:", k)
