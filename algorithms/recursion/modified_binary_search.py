@@ -31,6 +31,9 @@ Note -
 above procedure and then perform binary search on the two parts separately since each of those 
 would be sorted individually which is a pre-requisite for performing binary search.
 
+Reference -
+1. https://www.geeksforgeeks.org/binary-search/
+
 """
 
 def search_pivot (arr, start, end):
