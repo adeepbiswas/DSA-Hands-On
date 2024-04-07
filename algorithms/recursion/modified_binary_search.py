@@ -36,8 +36,9 @@ Reference -
 
 """
 
+# recurisve solution
 def search_pivot (arr, start, end):
-    while start < end:
+    if start < end:
         mid = (start + end) // 2
         if arr[mid] > arr[end]:
             return search_pivot(arr, mid+1, end)
@@ -45,6 +46,25 @@ def search_pivot (arr, start, end):
             return search_pivot(arr, start, mid)
     return start
 
-a = [5,6,7,8,3]
+a = [5,6,7,2,3]
 x = search_pivot(a, 0, len(a)-1)
 print(x)
+
+# iterative solution
+def find_pivot(arr):
+    left = 0
+    right = len(arr) - 1
+
+    while left < right:
+        mid = (left + right) // 2
+        if arr[mid] > arr[right]:
+            left = mid + 1
+        else:
+            right = mid
+
+    return left
+
+arr = [9, 13, 16, 18, 19, 23, 28, 31, 37, 42, 1, 3, 4, 5, 7, 8]
+k = find_pivot(arr)
+
+print("The unknown integer k is:", k)
